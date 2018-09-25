@@ -1,0 +1,57 @@
+The full data is saved in file
+
+all_open_models.npy
+
+This is a python binary final and can be opened using np.load
+
+The shape of the data array is
+
+5,7,6,7,35
+
+dimension
+1: Abundances --- As relative to solar abundance 0.05,0.2,0.4,1, and 2. In python:
+                    abundances = np.array([0.05,0.2,0.4,1,2])
+2: Stellar Ages --- Stellar Ages in Myr (million years) from 1 Myr to 7 Myr. In python:
+                    stellar_age = np.arange(1,8,1)
+3: Hydrogen Gas Density --- log10(density) from 1 to 3.5 in steps of 0.5. In python:
+                    densities = np.arange(1,4.0,0.5)
+4: Ionizaton Parameter --- log10(ionization_parameter) from -4 to -1.0 in steps of 0.5. In python:
+                    ionization_param = np.arange(-4,-0.5,0.5)
+5: Data --- this contains the actually line fluxes and continuum fluxes calculated by the model. The different indices correspond to different lines as indicated below
+
+Index                 Line Name
+0                     'nFnu      20.4636c',  #1.5 GHz
+1                     'nFnu      6.13700c',  #4.9 GHz
+2                     'nFnu      3.43208c',  #8.7 GHz
+3                     'nFnu      2.00329c',  #15.0 GHz
+4                     'nFnu      1.33478c',  #23.1 GHz
+5                     'nFnu      9993.08m',  #30 GHz
+6                     'nFnu      6917.22m',  #43.3 GHz
+7                     'FIR       83.0000m',
+8                     'TIR       1800.00m',
+9                     'NIRa      2.85000m',
+10                    'NIRb      3.00000m',
+11                    'MIRa      15.0000m',
+12                    'MIRb      22.5000m',
+13                    'NMIR      21.7500m',
+14                    'TFIR      611.250m',
+15                    'C  2      157.636m',
+16                    'N  2      121.767m',
+17                    'N  2      205.244m',
+18                    'N  3      57.3238m',
+19                    'O  1      63.1679m',
+20                    'O  1      145.495m',
+21                    'O  3      51.8004m',
+22                    'O  3      88.3323m',
+23                    'Ne 2      12.8101m',
+24                    'Ne 3      15.5509m',
+25                    'Ne 3      36.0036m',
+26                    'Na 3      7.31706m',
+27                    'Mg 4      4.48712m',
+28                    'Si 2      34.8046m',
+29                    'S  3      18.7078m',
+30                    'S  3      33.4704m',
+31                    'S  4      10.5076m',
+32                    'Ar 2      6.98337m',
+33                    'Ar 3      8.98898m',
+34                    'Ar 3      21.8253m',
